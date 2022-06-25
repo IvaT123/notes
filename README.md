@@ -1,6 +1,6 @@
 # Notes-App
 Simple application used to write notes (e.g. grocery list) and save them to a local storage. Each note can be modified and/or deleted.
-## Table of contents
+## Table of content
 * [Technologies](#technologies)
 * [Build Process](#build-process)
 * [Setup](#setup)
