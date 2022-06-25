@@ -1,0 +1,86 @@
+$radius:10px;
+$modal-color: rgb(232, 232, 232);
+$border-color: lightgray;
+
+@mixin header {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  height: 4vh;
+  align-items: center;
+  background-color: $modal-color;
+  border-top-left-radius: $radius;
+  border-top-right-radius: $radius;
+  font-size: 1rem;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-header {
+  margin: 2rem;
+}
+.container {
+  display: flex;
+  margin: 4rem;
+}
+.add-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(78, 169, 255) !important;
+  font-size: 3em !important;
+  color: white;
+}
+.note {
+  padding:1%;
+  margin-right: 2%;
+  border-radius: $radius;
+  width: 13rem;
+  height: 13rem;
+  background-color: rgb(194, 218, 248);
+  font-size: 0.5em; 
+  cursor: pointer;
+  ul {padding: 0;}
+  li {list-style-type: none;}
+}
+.notes-header {
+  @include header
+}
+.textarea-header {
+  @include header;
+  border: 2px solid $border-color;
+  border-bottom: none;
+}
+.modal {
+  position: fixed;
+  width: 40%;
+  height: 60%;
+  top: 5rem;
+  left: 30%;
+  border-radius: $radius;
+  background-color: $modal-color;
+  ul {padding: 0;}
+  li {list-style-type: none;}
+} 
+.textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: large;
+  line-height: 1.5;
+  border: 2px solid $border-color;
+}
+.back, .save-delete {
+  cursor: pointer;
+}
+.edit-update {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+
+
