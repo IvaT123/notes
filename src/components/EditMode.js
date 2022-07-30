@@ -30,7 +30,7 @@ EditMode.propTypes = {
     editButtonClass: PropTypes.string,
     update:PropTypes.func,
     middleButtonValue: PropTypes.string,
-    onEndClick: PropTypes.func.isRequired,
+    onEndClick: PropTypes.func,
     endButtonValue: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     value: PropTypes.string.isRequired
